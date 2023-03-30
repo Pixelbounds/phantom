@@ -1,0 +1,424 @@
+body {
+    margin: 0 auto;
+    background: #11111b no-repeat center center;
+    background-size: cover;
+}
+
+a:link, a:visited {
+    color: #f5e0dc
+}
+
+/* HEADER AND NAV */
+
+header {
+    position: fixed;
+    width: 100%;
+    margin-top: -15px;
+    text-align: left;
+    background: #181824;
+    min-height: 20px;
+    height: 60px;
+    border-bottom: 2px solid #c3a2f1;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+header:hover {
+    background: #1e1e2e;
+    border-bottom: 2px solid #f38ba8;
+}
+
+header ul {
+    position: relative;
+    font-family: 'Fira Code', monospace;
+    width: 70%;
+    top: 0px;
+    margin-left: 1%;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+header ul li:first-child {
+    position: relative;
+    height: 100px;
+    top: -2px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.3em;
+    margin-right: 125px;
+}
+
+header ul li a:link {
+    text-align: center;
+    color: #f5e0dc;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    color: #89b4fa;
+}
+
+header ul li a:hover:focus {
+    color: #89b4fa;
+}
+
+header img {
+    position: relative;
+    top: 8px;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+/* FRAME 1 */
+
+.frame {
+    width: 100%;
+    height: 60em;
+    background: url(../images/leaves.jpg) #11111b no-repeat center center;
+}
+
+h1 {
+    position: relative;
+    top: 0.2em;
+    color: #f5e0dc;
+    cursor: default;
+    border: none;
+    transition: 0.5s;
+}
+
+.wg-portal {
+    position: relative;
+    top: 5em;
+    display: inline-block;
+    width: 25%;
+    margin-left: 10%;
+    text-align: center;
+    background: rgba(24, 24, 36, .95);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+}
+
+.about {
+    position: relative;
+    top: 5em;
+    background: rgba(24, 24, 36, .95);
+    width: 40%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    margin-right: 10%;
+    float: right;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+}
+
+.about p {
+    line-height: 2.2em;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #cdd6f4;
+}
+
+.about a {
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* HOVERS AND FOCUS FOR FRAME 1 */ 
+.about a:hover {
+    color: #89b4fa;
+}
+
+.about a:hover:focus {
+    color: #89b4fa;
+}
+
+.wg-portal:hover {
+    border-bottom: 3px solid #f38ba8;
+    background: rgba(30, 30, 46, 1)
+}
+
+.wg-portal:hover > h1 {
+    color: #c3a2f1;
+}
+
+.about:hover {
+    border-bottom: 3px solid #f38ba8;
+    background: rgba(30, 30, 46, 1);
+}
+
+.about:hover > h1 {
+    color: #c3a2f1;
+}
+
+/* IMAGES IN FRAME 1 */
+.frame .ghost {
+    position: relative;
+    top: 0px;
+}
+
+.frame .down {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 190px;
+    width: 55px;
+}
+
+/* FRAME 2 */
+
+.frame-2 {
+    position: relative;
+    top: -44px;
+    background: #f5e0dc;
+    height: 2600px;
+    overflow: hidden;
+}
+
+.frame-2 .intro {
+    position: relative;
+    top: 140px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.frame-2 .intro h1 {
+    font-size: 2.2em;
+    color: #1e1e2e
+}
+
+.frame-2 .intro p {
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color:rgba(30, 30, 46, 1);
+}
+
+.frame-2 .os {
+    position: relative;
+    padding: 40px;
+    width: 60%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background: rgba(24, 24, 36, 1);
+    border-radius: 6px;
+    margin-top: 260px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+
+.os h1 {
+    position: relative;
+    top: 0px;
+}
+
+.os p {
+    position: relative;
+    font-weight: bold;
+    color: #cdd6f4;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+.os .windows-differences {
+    padding: 20px;
+    border-radius: 6px;
+    width: 35%;
+    background: #89b4fa;
+    color: #1e1e2e;
+    font-weight: bold;
+    line-height: 1.2em;
+    transition: 0.5s;
+}
+
+.os .windows-differences h2 {
+    position: relative;
+    top: -15px;
+}
+
+.os .linux-differences h2 {
+    position: relative;
+    top: -15px;
+}
+
+.windows-differences img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.windows-differences ul {
+    list-style-type: none;
+}
+
+.linux-differences ul {
+    list-style-type: none;
+}
+
+.windows-differences ul li {
+    background: #b4befe;
+    margin-left: -40px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.linux-differences ul li {
+    background: #b4befe;
+    margin-left: -40px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.linux-differences img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.os .linux-differences {
+    padding: 20px;
+    position: relative;
+    top: -352px;
+    border-radius: 6px;
+    width: 35%;
+    background: #89b4fa;
+    color: #1e1e2e;
+    font-weight: bold;
+    line-height: 1.2em;
+    float: right;
+    transition: 0.5s;
+}
+
+.os .linux-differences:hover {
+    background: #f38ba8;
+}
+
+.os .windows-differences:hover {
+    background: #f38ba8;
+}
+
+.os .windows-differences:hover > ul li {
+    background: #1e1e2e;
+    color: #f5e0dc;
+}
+
+.os .linux-differences:hover > ul li {
+    background: #1e1e2e;
+    color: #f5e0dc;
+}
+
+.frame-2 .os:hover {
+    background: rgba(30, 30, 46, 1);
+}
+
+.os:hover > h1 {
+    color: #c3a2f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+.bounce {
+    animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    -moz-animation: bounce 3s infinite;
+    -o-animation: bounce 3s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-20px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+    }
+  }
+  @-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-20px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+    }
+  }
+  @-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -o-transform: translateY(0);
+    }
+    40% {
+      -o-transform: translateY(-20px);
+    }
+    60% {
+      -o-transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
