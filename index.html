@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Phantom Server</title>
+        <link rel="icon" type="image/png" href="./static/images/ghost-2.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
@@ -14,32 +15,29 @@
         <header>
             <ul>
                 <li><a href="#"><img src="./static/images/ghost-2.png">Phantom/Ghost</a></li>
-                <li><a href="https://github.com/Pixelbounds/dotfiles">Dotfiles</a></li>
-                <li><a href="#intro">Personvern og Nett-sikkerhet</a></li>
+                <li><a href="https://github.com/Pixelbounds/phantom">GitHub</a></li>
+                <li><a href="#intro">Personvern & Nett-sikkerhet</a></li>
                 <li><a href="#">Informasjon</a></li>
+                <li><a href="/blog">Blog</a></li>
             </ul>
         </header>    
 
 <div class="frame">
-    <div class="wg-portal animate__animated animate__backInLeft">
-        <h1>Phantom server er online</h1>
-        <img class="ghost" src="./static/images/ghost.png">
-    </div>
 
-    <div class="about animate__animated animate__backInRight">
-    <h1>Phantom & Ghost</h1>
-    <p>Phantom er en <i>OpenBSD</i> server som opprettholder <a href="https://www.wireguard.com/">Wireguard VPN</a> og <a href="https://github.com/SpatiumPortae/portal">Portal</a> 
-        rele for personlig fil-deling. Den er også vert for denne nettsiden. Phantom er 'hardened' så den står bedre imot angrep fra utsiden.</p>
-    <p>Ghost er en personlig <i>Fedora</i> hjemme-server som har forbindelse med Spectre klienten. Planlagt bruk er <a href="https://github.com/0xERR0R/blocky">blocky</a> DNS
-        blokker, <a href="https://jellyfin.org/">Jellyfin</a> for media deling og lagring,
-         <a href="https://github.com/dani-garcia/vaultwarden">VaultWarden</a> for passord sikkerhet,
-          <a href="https://github.com/xy2z/PineDocs">PineDocs</a> som kan indekse prosessen,
-        og <a href="https://github.com/bastienwirtz/homer">Homer</a> fungerer som et dashboard for alle prosessene.
-    </p>
-    <p>Denne nettsiden er et hobbyprosjekt som har som mål å informere andre om hvordan man kan bli tryggere på nettet.
-        Nettsiden har ingen JavaScript eller cookies.
-    </p>
+    <div class="about animate__animated animate__backInLeft">
+    <h1>Sikkerhet og personvern</h1>
+    <p>
+        Denne nettsiden er et hobby prosjekt som har som formål å formidle informasjon om hvordan du og dine kan bli tryggere og sikre deg selv
+        fra tredjeparti på nettet. All programvare og linker til nedlastninger er lovlige i Norge.<br><br>
+        Jeg vil ikke forklare hvordan man kan gjøre noe ulovlig gjennom disse virkemidlene selv om det er fullt mulig å gjøre
+         ulovlige handlinger ved å bruke og konfigurere programmene slik at de gjør ulovlige handlinger.
+        </p>
         </div>
+
+    <div class="wg-portal animate__animated animate__backInRight">
+        <img class="ghost" src="./static/images/less.svg">
+    </div>
+        
 
     <img class="down bounce" src="./static/images/down.png">
 </div>
@@ -50,6 +48,7 @@
         <p>Nedenfor går jeg gjennom flere punkter for hvordan du kan bedre forbedre ditt personvern og internett sikkerhet.</p>
         <ol>
             <h2>Innholdsliste</h2>
+            <li><a href="#innledning">Innledning</a></li>
             <li><a href="#vps">Virtual Private Server (VPS)</a></li>
             <li><a href="#vpn">Virtual Private Network (VPN)</a></li>
             <li><a href="#browser">Nettlesere</a></li>
@@ -57,6 +56,29 @@
         </ol>
     </div>
 
+    <div class="innledning" id="innledning">
+        <h1>Innledning</h1>
+        <p>I dagens samfunn er man mer og mer avhengig av å være på nett. Nesten alle aspekt av livene våre har blitt digitalisert og det er
+            derfor viktig å ha et slags 'eierskap' av det man gjør på nettet. Det er dessverre ikke mulig å bli 100% anonym på nett, hvis noen
+            hevder at de kan gjøre deg totalt usynlig så er det salgstriks og løgn. Så hva kan man egentlig gjøre for å bli mer usynlig på nett og faktisk ha noe form for kontroll over det som går gjennom ens eget 
+            hjemme-nett? <br><br>
+
+            Det første man vil gjøre er å gjøre at alle pakkene man sender gjennom internettet er kryptert. Til nå så er det ikke standard at 
+            nett forbindelsen vår er kryptert. Det vil si at internet leverandøren din som Altibox og Get, kan se alle nettsider du går inn på. De aller fleste store nettsider i dag bruker en krypterings-protokoll 
+            som kalles Transport Layer Security / Secure Sockets Layer (TLS/SSL). Denne krypteringen brukes over HTTP forbindelser som vi kaller for 
+            Hypertext Transfer Protocol Secure (HTTPS). Protokollen gjør det nært umulig for andre å se hva du faktisk laster opp til en 
+            nettside som for eksempel brukernavn, e-mail, passord osv.<br><br>
+
+            Så hva trenger man da en VPN for? <a href="https://nrkbeta.no/2019/10/11/telia-og-telenor-selger-analyser-av-hvor-mobilbrukere-befinner-seg/">
+                Norske nettleverandører selger og analyserer</a> de ukrypterte forbindelsene på nettet ditt. Med en VPN så vil nettleverandøren
+                bare se at du besøker IP addressen til din VPN tjeneste. Dette gjør at nett leverandøren din ikke har mulighet til å selge noe
+                av dataen din. Forbindelsen er kryptert og pakkene som blir sendt gjennom nettet vil se ut som helt tilfeldige tall og nummer som kan ta flere millioner år å dekryptere.
+        </p>
+    </div>
+
+    </div>
+
+<div class="frame-3">    
     <div class="os" id="os">
         <h1>Operativ System</h1>
         <p>Hvis du leser dette bruker du mest sannsynlig en PC som har Windows eller MacOS. Windows er et bra operativ system (OS)
@@ -94,13 +116,6 @@
         </div>
         <br><br>
     </div>
-
-    <div class="os-cont">
-        <h1>
-        </h1>
-    </div>
 </div>
-
-
     </body>
 </html>
