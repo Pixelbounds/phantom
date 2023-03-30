@@ -15,29 +15,29 @@
             <ul>
                 <li><a href="#"><img src="./static/images/ghost-2.png">Phantom/Ghost</a></li>
                 <li><a href="https://github.com/Pixelbounds/dotfiles">Dotfiles</a></li>
-                <li><a href="#intro">Privacy and Net-security</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#intro">Personvern og Nett-sikkerhet</a></li>
+                <li><a href="#">Informasjon</a></li>
             </ul>
         </header>    
 
 <div class="frame">
     <div class="wg-portal animate__animated animate__backInLeft">
-        <h1>Phantom server is running</h1>
+        <h1>Phantom server er online</h1>
         <img class="ghost" src="./static/images/ghost.png">
     </div>
 
     <div class="about animate__animated animate__backInRight">
-    <h1>Phantom and Ghost</h1>
-    <p>Phantom is an <i>OpenBSD</i> server running <a href="https://www.wireguard.com/">Wireguard</a> and a <a href="https://github.com/SpatiumPortae/portal">Portal</a> 
-        relay for file sharing. It also hosts this website. Phantom is hardened so it's less susceptible to attacks.</p>
-    <p>Ghost is a <i>Fedora</i> home-server which connects to the Spectre client. Planned usage will be <a href="https://github.com/0xERR0R/blocky">blocky</a> DNS
-        blocker, <a href="https://jellyfin.org/">Jellyfin</a> for media consumption,
-         <a href="https://github.com/dani-garcia/vaultwarden">VaultWarden</a> for password security,
-          <a href="https://github.com/xy2z/PineDocs">PineDocs</a> to catalogue the process
-        and <a href="https://github.com/bastienwirtz/homer">Homer</a> as the dashboard.
+    <h1>Phantom & Ghost</h1>
+    <p>Phantom er en <i>OpenBSD</i> server som opprettholder <a href="https://www.wireguard.com/">Wireguard VPN</a> og <a href="https://github.com/SpatiumPortae/portal">Portal</a> 
+        rele for personlig fil-deling. Den er også vert for denne nettsiden. Phantom er 'hardened' så den står bedre imot angrep fra utsiden.</p>
+    <p>Ghost er en personlig <i>Fedora</i> hjemme-server som har forbindelse med Spectre klienten. Planlagt bruk er <a href="https://github.com/0xERR0R/blocky">blocky</a> DNS
+        blokker, <a href="https://jellyfin.org/">Jellyfin</a> for media deling og lagring,
+         <a href="https://github.com/dani-garcia/vaultwarden">VaultWarden</a> for passord sikkerhet,
+          <a href="https://github.com/xy2z/PineDocs">PineDocs</a> som kan indekse prosessen,
+        og <a href="https://github.com/bastienwirtz/homer">Homer</a> fungerer som et dashboard for alle prosessene.
     </p>
-    <p>This website is a hobby project. The goal is to use none or minimal amounts of JavaScript. The ultimate goal is to
-        use this site to inform more people on the benefits of digital freedom and better internet security.
+    <p>Denne nettsiden er et hobbyprosjekt som har som mål å informere andre om hvordan man kan bli tryggere på nettet.
+        Nettsiden har ingen JavaScript eller cookies.
     </p>
         </div>
 
@@ -46,46 +46,50 @@
 
 <div class="frame-2">
     <div class="intro" id="intro">
-        <h1>Do you want to learn about digital freedom and security?</h1>
-        <p>I'll go through a couple of points starting with operating system, browser and VPNs.</p>
+        <h1>Personvern og Internett-sikkerhet</h1>
+        <p>Nedenfor går jeg gjennom flere punkter for hvordan du kan bedre forbedre ditt personvern og internett sikkerhet.</p>
+        <ol>
+            <h2>Innholdsliste</h2>
+            <li><a href="#vps">Virtual Private Server (VPS)</a></li>
+            <li><a href="#vpn">Virtual Private Network (VPN)</a></li>
+            <li><a href="#browser">Nettlesere</a></li>
+            <li><a href="#os">Operativ System (OS)</a></li>
+        </ol>
     </div>
 
-    <div class="os">
-        <h1>Operating System</h1>
-        <p>If you're reading this you're probably already using Windows as your operating system (OS). Windows is a
-            great operating system if you're gaming or need support for a certain proprietary software, like Adobe products
-             or the Office Suite.<br><br>
+    <div class="os" id="os">
+        <h1>Operativ System</h1>
+        <p>Hvis du leser dette bruker du mest sannsynlig en PC som har Windows eller MacOS. Windows er et bra operativ system (OS)
+            hvis du skal bruke det til spill eller til proprietær software, som f.eks Microsoft Suite eller Adobe produkter. <br><br>
 
-        In general most of us don't really use an OS, we use the apps contained in the OS. If you're just using your OS
-        to browse the web, write in Office or Excel and personal storing photos. All of these things can be done for free and 
-         better on Linux distros.<br><br>
+        De fleste av oss bruker ikke et OS på den tradisjonelle måten. Operativ systemet er for de fleste bare noe som holder
+        programmene og spillene. Hvis du bruker en PC bare for nettlesing, media, skole oppgaver og lagring av personlige bilder
+        så kan Linux gjøre dette gratis, bedre og tryggere.<br><br>
 
-        So in a sense Windows is just the environment that you use apps in, so there isn't a good argument or reason not
-        to install Linux, you're already not using Windows as an OS, you're using it as a app environment.
-        <br> <br>
-        Installing a Linux distro is easier than installing Windows. Linux doesn't require your email or any other social
-        media to function.
+        Å installere Linux kan være enklere enn Windows. Linux krever ikke at du har en e-mail eller andre former for sosiale medier for å fungere.
+        Problemet er at det er ikke særlig gunstig å installere Linux på en hard-disk eller SSD som allerede er installert med Windows.
+        Man må enten ha en seperat disk slik at de to operativ systemene er skilt.
         </p><br><br>
 
         <div class="windows-differences">
             <h2><img src="./static/images/windows.png">Microsoft Windows</h2>
                 <ul>
-                    <li>Closed-source</li>
-                    <li>Costs about 130$</li>
-                    <li>Less secure</li>
-                    <li>Better suited for gaming</li>
-                    <li>Requires a Microsoft account</li>
+                    <li>Lukket kilde-kode</li>
+                    <li>Prisen er ca. 1500kr</li>
+                    <li>Dårlig sikkerhet</li>
+                    <li>Bedre for spill</li>
+                    <li>Krever en Microsoft konto</li>
                 </ul>
         </div>
 
         <div class="linux-differences">
             <h2><img src=./static/images/linux.png>Linux-based distros</h2>
                 <ul>
-                    <li>Open-source</li>
-                    <li>Free</li>
-                    <li>Better security</li>
-                    <li>Can be used for gaming</li>
-                    <li>Doesn't require e-mail or online service</li>
+                    <li>Åpen kilde-kode</li>
+                    <li>Gratis</li>
+                    <li>Bra sikkerhet</li>
+                    <li>Kan spille men ikke optimalt</li>
+                    <li>Krever ikke e-mail eller online-tjenester</li>
                 </ul>
         </div>
         <br><br>

@@ -176,8 +176,7 @@ h1 {
 .frame .down {
     position: relative;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50%;
     top: 190px;
     width: 55px;
 }
@@ -210,6 +209,40 @@ h1 {
     font-weight: bold;
     font-size: 1.2em;
     color:rgba(30, 30, 46, 1);
+}
+
+.frame-2 .intro ol {
+    color: #f5e0dc;
+    line-height: 2em;
+    border-radius: 6px;
+    position: relative;
+    top: 30px;
+    width: 30%;
+    padding: 40px;
+    background: #1e1e2e;
+    transition: 0.5s;
+}
+
+.frame-2 .intro ol em {
+    position: relative;
+    top: -20px;
+    margin-left: 5%;
+}
+
+.frame-2 .intro ol h2 {
+    position: relative;
+    top: -10px;
+    transition: 0.5s;
+}
+
+.frame-2 .intro ol li {
+    position: relative;
+    top: -10px;
+    margin-left: 20px;
+}
+
+.frame-2 .intro ol li a {
+    transition: 0.5s;
 }
 
 .frame-2 .os {
@@ -307,6 +340,14 @@ h1 {
     line-height: 1.2em;
     float: right;
     transition: 0.5s;
+}
+
+.frame-2 .intro ol:hover > h2 {
+    color: #c3a2f1;
+}
+
+.frame-2 .intro ol li a:hover {
+    color: #89b4fa;
 }
 
 .os .linux-differences:hover {
