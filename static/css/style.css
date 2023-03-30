@@ -84,7 +84,7 @@ header img {
     background: url(../images/leaves.jpg) #11111b no-repeat center center;
 }
 
-h1 {
+.frame h1 {
     position: relative;
     top: 0.2em;
     color: #f5e0dc;
@@ -263,7 +263,22 @@ h1 {
 
 .innledning h1 {
     position: relative;
-    color :#181824
+    color: #f5e0dc;
+    padding: 20px;
+    cursor: default;
+    background: #1e1e2e;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.innledning h1:hover {
+    color: #c3a2f1;
+}
+
+.innledning h2 {
+    position: relative;
+    top: 30px;
+    color: #181824
 }
 
 .innledning p {

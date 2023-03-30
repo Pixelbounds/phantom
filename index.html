@@ -15,7 +15,7 @@
         <header>
             <ul>
                 <li><a href="#"><img src="./static/images/ghost-2.png">Phantom/Ghost</a></li>
-                <li><a href="https://github.com/Pixelbounds/phantom">GitHub</a></li>
+                <li><a href="https://github.com/Pixelbounds/phantom" target="_blank">GitHub</a></li>
                 <li><a href="#intro">Personvern & Nett-sikkerhet</a></li>
                 <li><a href="#">Informasjon</a></li>
                 <li><a href="/blog">Blog</a></li>
@@ -57,7 +57,8 @@
     </div>
 
     <div class="innledning" id="innledning">
-        <h1>Innledning</h1>
+        <h1>1. Innledning</h1>
+        <h2>Nettleverandører</h2>
         <p>I dagens samfunn er man mer og mer avhengig av å være på nett. Nesten alle aspekt av livene våre har blitt digitalisert og det er
             derfor viktig å ha et slags 'eierskap' av det man gjør på nettet. Det er dessverre ikke mulig å bli 100% anonym på nett, hvis noen
             hevder at de kan gjøre deg totalt usynlig så er det salgstriks og løgn. Så hva kan man egentlig gjøre for å bli mer usynlig på nett og faktisk ha noe form for kontroll over det som går gjennom ens eget 
@@ -65,15 +66,34 @@
 
             Det første man vil gjøre er å gjøre at alle pakkene man sender gjennom internettet er kryptert. Til nå så er det ikke standard at 
             nett forbindelsen vår er kryptert. Det vil si at internet leverandøren din som Altibox og Get, kan se alle nettsider du går inn på. De aller fleste store nettsider i dag bruker en krypterings-protokoll 
-            som kalles Transport Layer Security / Secure Sockets Layer (TLS/SSL). Denne krypteringen brukes over HTTP forbindelser som vi kaller for 
+            som kalles Transport Layer Security / Secure Sockets Layer (TLS/SSL). Denne krypteringen brukes over HTTP forbindelser som kalles for 
             Hypertext Transfer Protocol Secure (HTTPS). Protokollen gjør det nært umulig for andre å se hva du faktisk laster opp til en 
             nettside som for eksempel brukernavn, e-mail, passord osv.<br><br>
 
-            Så hva trenger man da en VPN for? <a href="https://nrkbeta.no/2019/10/11/telia-og-telenor-selger-analyser-av-hvor-mobilbrukere-befinner-seg/">
+            Så hva trenger man da en VPN for? <a href="https://nrkbeta.no/2019/10/11/telia-og-telenor-selger-analyser-av-hvor-mobilbrukere-befinner-seg/" target="_blank">
                 Norske nettleverandører selger og analyserer</a> de ukrypterte forbindelsene på nettet ditt. Med en VPN så vil nettleverandøren
                 bare se at du besøker IP addressen til din VPN tjeneste. Dette gjør at nett leverandøren din ikke har mulighet til å selge noe
                 av dataen din. Forbindelsen er kryptert og pakkene som blir sendt gjennom nettet vil se ut som helt tilfeldige tall og nummer som kan ta flere millioner år å dekryptere.
         </p>
+
+        <h2>VPN tjenester</h2>
+        <p>Det er problematisk å bruke VPN tjenester fra store selskaper. For eksempel <a href="https://www.techradar.com/news/whats-the-truth-about-the-nordvpn-breach-heres-what-we-now-know" target="_blank">NordVPN ble hacket</a> og ga ikke
+        sine kunder noe informasjon om at de ble hacket i 2 år. <a href="https://cybernews.com/news/expressvpn-cio-daniel-gericke-fined-335-000-for-cyber-espionage/" target="_blank">Express VPN har en tidligere spion</a> som sin CIO,
+    og de er eid av <a href="https://www.cnet.com/tech/services-and-software/what-is-kape-technologies-what-you-need-to-know-about-the-parent-company-of-cyberghost-vpn/" target="_blank">Kape Industries</a>.
+            Hvis du skal bruke en ekstern VPN må du kunne stole på dem, de mest tillitsverdige er <a href="https://mullvad.net/en/" target="_blank">Mullvad</a> og <a href="https://protonvpn.com/" target="_blank">ProtonVPN</a>.<br><br>
+
+            Hovedproblemet ligger ikke bare i tillit. Bruker man disse tjenestene så vil man ikke ha eierskap over den private krypteringsnøkkelen.
+            Ofte i kryptografi protokoller lager man først en privat nøkkel, som er grunnlaget for å generere det man kaller en offentlig nøkkel.
+            Den private nøkkelen dekrypterer og krypterer den offentlige nøkkelen slik at dataen som går gjennom protokollen ikke kan bli
+            knekt av tredjepartier. Personen eller gruppen som har eierskap av privatnøkkelen har derfor i praksis også eierskap over all data som har blitt kryptert
+            med den offentlige nøkkelen som er basert på på privatnøkkelen. Dette gjør det litt mer problematisk å bruke en VPN som tjeneste som
+            ikke gir deg tilgang til din egen privatenøkkel.<br><br>
+            
+            Ikke bare har disse selskapene tilgang til din private nøkkel, de har også noe som kalles 'logs'. Logs er log-filer som inneholder
+            all informasjon om hvordan VPN protokollen har blitt brukt. Veldig mange VPN tjenester hevder at de ikke lagrer logs, og for å bevise
+            dette gjennomfører de en ekstremt effektiv taktikk innenfor nett sikkerhet, og denne taktikken kalles: "trust me bro".
+
+</p>
     </div>
 
     </div>
