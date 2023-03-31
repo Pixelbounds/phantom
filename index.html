@@ -27,10 +27,11 @@
     <div class="about animate__animated animate__backInLeft">
     <h1>Sikkerhet og personvern</h1>
     <p>
-        Denne nettsiden er et hobby prosjekt som har som formål å formidle informasjon om hvordan du og dine kan bli tryggere og sikre deg selv
-        fra tredjeparti på nettet. All programvare og linker til nedlastninger er lovlige i Norge.<br><br>
-        Jeg vil ikke forklare hvordan man kan gjøre noe ulovlig gjennom disse virkemidlene selv om det er fullt mulig å gjøre
-         ulovlige handlinger ved å bruke og konfigurere programmene slik at de gjør ulovlige handlinger.
+        Denne nettsiden er et hobby prosjekt som har som formål å formidle informasjon om hvordan du kan sikre deg selv
+        fra tredjepartier på internett. Alle programvarene og linker til nedlastninger er lovlige i Norge.<br><br>
+
+        Jeg er ikke ansvarlig for hvordan du bruker disse virkemidlene eller programvarene, det er opp til deg som enkeltperson
+        å være ansvarlig nok til å kunne bruke disse programvarene uten å komme i trøbbel med staten.
         </p>
         </div>
 
@@ -49,8 +50,13 @@
         <ol>
             <h2>Innholdsliste</h2>
             <li><a href="#innledning">Innledning</a></li>
+            <ul>
+                <li><a href="#nettleverandører">Nettleverandører</a></li>
+                <li><a href="#VPN-tjen">VPN tjenester</a></li>
+                <li><a href="#virtuellps">Virtuell Privat Server</a></li>
+            </ul>
+            <li><a href="#vpn">WireGuard (VPN tunnel)</a></li>
             <li><a href="#vps">Virtual Private Server (VPS)</a></li>
-            <li><a href="#vpn">Virtual Private Network (VPN)</a></li>
             <li><a href="#browser">Nettlesere</a></li>
             <li><a href="#os">Operativ System (OS)</a></li>
         </ol>
@@ -58,42 +64,61 @@
 
     <div class="innledning" id="innledning">
         <h1>1. Innledning</h1>
-        <h2>Nettleverandører</h2>
+        <h2 id="nettleverandører">Nettleverandører</h2>
         <p>I dagens samfunn er man mer og mer avhengig av å være på nett. Nesten alle aspekt av livene våre har blitt digitalisert og det er
             derfor viktig å ha et slags 'eierskap' av det man gjør på nettet. Det er dessverre ikke mulig å bli 100% anonym på nett, hvis noen
             hevder at de kan gjøre deg totalt usynlig så er det salgstriks og løgn. Så hva kan man egentlig gjøre for å bli mer usynlig på nett og faktisk ha noe form for kontroll over det som går gjennom ens eget 
             hjemme-nett? <br><br>
 
-            Det første man vil gjøre er å gjøre at alle pakkene man sender gjennom internettet er kryptert. Til nå så er det ikke standard at 
-            nett forbindelsen vår er kryptert. Det vil si at internet leverandøren din som Altibox og Get, kan se alle nettsider du går inn på. De aller fleste store nettsider i dag bruker en krypterings-protokoll 
+            Først må man kryptere all data som går gjennom hjemmenettverket. Foreløpig må man bruke eksterne VPN tjenester eller lage sin egen VPN for å kryptere internett forbindelsen. 
+            Ut av boksen så er forbindelsen din med internett ukryptert. Det vil si at internet leverandøren din som Altibox og Get, kan se alle nettsider du besøker. De fleste store nettsider i dag bruker en krypterings-protokoll 
             som kalles Transport Layer Security / Secure Sockets Layer (TLS/SSL). Denne krypteringen brukes over HTTP forbindelser som kalles for 
             Hypertext Transfer Protocol Secure (HTTPS). Protokollen gjør det nært umulig for andre å se hva du faktisk laster opp til en 
             nettside som for eksempel brukernavn, e-mail, passord osv.<br><br>
 
             Så hva trenger man da en VPN for? <a href="https://nrkbeta.no/2019/10/11/telia-og-telenor-selger-analyser-av-hvor-mobilbrukere-befinner-seg/" target="_blank">
-                Norske nettleverandører selger og analyserer</a> de ukrypterte forbindelsene på nettet ditt. Med en VPN så vil nettleverandøren
-                bare se at du besøker IP addressen til din VPN tjeneste. Dette gjør at nett leverandøren din ikke har mulighet til å selge noe
-                av dataen din. Forbindelsen er kryptert og pakkene som blir sendt gjennom nettet vil se ut som helt tilfeldige tall og nummer som kan ta flere millioner år å dekryptere.
-        </p>
+                Norske nettleverandører selger og analyserer</a> de ukrypterte forbindelsene på hjemmenettverket ditt. Ved å bruke en VPN så vil nettleverandøren
+                bare se IP addressen til din VPN tjeneste. Dette gjør at nett leverandøren din ikke har mulighet til å selge noe
+                av dataen din. Forbindelsen med VPN tjenesten er kryptert og pakkene som blir sendt vil se ut som helt tilfeldige tall og nummer som kan ta flere millioner år å dekryptere.
+        </p><br>
 
-        <h2>VPN tjenester</h2>
+        <h2 id="VPN-tjen">VPN tjenester</h2>
         <p>Det er problematisk å bruke VPN tjenester fra store selskaper. For eksempel <a href="https://www.techradar.com/news/whats-the-truth-about-the-nordvpn-breach-heres-what-we-now-know" target="_blank">NordVPN ble hacket</a> og ga ikke
         sine kunder noe informasjon om at de ble hacket i 2 år. <a href="https://cybernews.com/news/expressvpn-cio-daniel-gericke-fined-335-000-for-cyber-espionage/" target="_blank">Express VPN har en tidligere spion</a> som sin CIO,
     og de er eid av <a href="https://www.cnet.com/tech/services-and-software/what-is-kape-technologies-what-you-need-to-know-about-the-parent-company-of-cyberghost-vpn/" target="_blank">Kape Industries</a>.
             Hvis du skal bruke en ekstern VPN må du kunne stole på dem, de mest tillitsverdige er <a href="https://mullvad.net/en/" target="_blank">Mullvad</a> og <a href="https://protonvpn.com/" target="_blank">ProtonVPN</a>.<br><br>
 
-            Hovedproblemet ligger ikke bare i tillit. Bruker man disse tjenestene så vil man ikke ha eierskap over den private krypteringsnøkkelen.
-            Ofte i kryptografi protokoller lager man først en privat nøkkel, som er grunnlaget for å generere det man kaller en offentlig nøkkel.
+            Hovedproblemet ligger ikke bare i tillit. Bruker man disse tjenestene vil man ikke ha eierskap over den private krypteringsnøkkelen.
+            Ofte i kryptografiske protokoller genereres først en privat nøkkel, den er grunnlaget for å generere det man kaller en offentlig nøkkel.
             Den private nøkkelen dekrypterer og krypterer den offentlige nøkkelen slik at dataen som går gjennom protokollen ikke kan bli
-            knekt av tredjepartier. Personen eller gruppen som har eierskap av privatnøkkelen har derfor i praksis også eierskap over all data som har blitt kryptert
-            med den offentlige nøkkelen som er basert på på privatnøkkelen. Dette gjør det litt mer problematisk å bruke en VPN som tjeneste som
-            ikke gir deg tilgang til din egen privatenøkkel.<br><br>
+            knekt av tredjepartier. Personen eller gruppen som har eierskap av privatnøkkelen har derfor i praksis også eierskap over all data som blir kryptert
+            med den offentlige nøkkelen. Dette gjør det litt mer problematisk å bruke en VPN tjeneste som
+            ikke gir deg tilgang til din egen privatnøkkel.<br><br>
             
             Ikke bare har disse selskapene tilgang til din private nøkkel, de har også noe som kalles 'logs'. Logs er log-filer som inneholder
             all informasjon om hvordan VPN protokollen har blitt brukt. Veldig mange VPN tjenester hevder at de ikke lagrer logs, og for å bevise
-            dette gjennomfører de en ekstremt effektiv taktikk innenfor nett sikkerhet, og denne taktikken kalles: "trust me bro".
+            dette gjennomfører de en ekstremt effektiv taktikk innenfor nett sikkerhet, og denne taktikken kalles: "trust me bro".<br><br>
 
-</p>
+            VPN selskapene har kanskje tredjepartis revisjoner av deres kode. Fremdeles må vi bare stole på dem og det firmaet som gjorde 
+            analyse på kodene deres. Med mindre du har tilgang til serveren og kan se din egen private nøkkel eller se at serveren ikke 
+            lagrer logs så må du bare stole blindt på dem. Dette er "trust me bro" taktikken.
+        </p><br>
+
+        <h2 id="virtuellps">Virtuell Privat Server</h2>
+        <p> En Virtuell Privat Server (VPS) er en server man kan leie fra et cloud server hosting nettside. Store selskaper bruker ofte ordet
+            sky og cloud som en slags pen greie som er i himmelen, i virkeligheten er det bare en server i et stort serverlandskap som driver med
+            skilleveggslagring eller tilbyr å åpne en port slik at du kan etablere en forbindelse.
+
+            Leier man en VPS vil man fremdeles ikke eie selve serveren. Er man spesielt interessert kan man kjøpe sin egen mini-pc og installere
+            server operativ system og hoste egen VPN gjennom det, da vil man ikke få en IP som er utenfor Norge, mest sannsynlig vil du få en
+            statisk IP levert fra nettleverandøren din, men all data vil fremdeles være kryptert.<br><br>
+
+            For å kunne skjule seg bedre fra tredjeparti på nettet er det mer gunstig å ha en annerledes IP enn hjemmenettverket. En IP i utlandet
+            vil være mer forvirrende for internett trackers og reklame algoritmer. Skal man leie en VPS så må man igjen bare stole blindt på at system
+            administratorene i serverlandskapet ikke har tilgang til din server. I motsetning til store VPN selskaper så kan man med egen VPS sørge
+            for at VPN protokollen ikke fører logs, og man vil også ha full tilgang til egen privat nøkkel, man vil også kunne skru av det som kalles
+            root-access. Dette fører til at en VPN protokoll som du opprettholder på en VPS vil være sikrere enn å abonnere på en VPN tjeneste.
+        </p>
     </div>
 
     </div>
