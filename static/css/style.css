@@ -188,7 +188,7 @@ header img {
     position: relative;
     top: -44px;
     background: #f5e0dc;
-    height: 2600px;
+    height: 5000px;
     overflow: hidden;
 }
 
@@ -290,22 +290,70 @@ header img {
 
 .innledning h2 {
     position: relative;
-    top: 30px;
-    color: #181824
+    top: -10px;
+    cursor: default;
+    padding: 30px;
+    width: 30%;
+    border-radius: 6px;
+    background: #1e1e2e;
+    left: -0px;
+    color: #f38ba8;
+    transition: 0.5s;
+    text-decoration: underline;
+    scroll-margin-block-start: 100px
 }
 
 .innledning p {
     position: relative;
-    top: 30px;
-    color: #1e1e2e;
+    top: -132px;
+    padding: 30px;
+    background: #1e1e2e;
+    border-radius: 13px;
+    border-top-left-radius: 0px;
+    color: #f5e0dc;
     line-height: 1.8em;
     font-weight: bold;
+    margin-bottom: -90px;
 }
 
 .innledning p a {
     color: #f38ba8;
 }
 
+.controller-1 {
+    display: none;
+    transition: 0.5s;
+}
+
+.controller-2 {
+    display: none;
+    transition: 0.5s;
+}
+
+.controller-3 {
+    display: none;
+}
+
+#toggle-1, #toggle-2, #toggle-3 {
+    position: relative;
+    top: -110px;
+    cursor: pointer;
+    width: 360px;
+    opacity: 0;
+    height: 80px;
+}
+
+#toggle-1:checked ~ .controller-1 {
+    display: block;
+}
+
+#toggle-2:checked ~ .controller-2 {
+    display: block;
+}
+
+#toggle-3:checked ~ .controller-3 {
+    display: block;
+}
 /* OPERATIV SYSTEM 
 ****************************************/
 

@@ -46,7 +46,7 @@
 <div class="frame-2">
     <div class="intro" id="intro">
         <h1>Personvern og Internett-sikkerhet</h1>
-        <p>Nedenfor går jeg gjennom flere punkter for hvordan du kan bedre forbedre ditt personvern og internett sikkerhet.</p>
+        <p>Klikk på de rosa lenkene for å åpne teksten</p>
         <ol>
             <h2>Innholdsliste</h2>
             <li><a href="#innledning">Innledning</a></li>
@@ -64,8 +64,9 @@
 
     <div class="innledning" id="innledning">
         <h1>1. Innledning</h1>
-        <h2 id="nettleverandører">Nettleverandører</h2>
-        <p>I dagens samfunn er man mer og mer avhengig av å være på nett. Nesten alle aspekt av livene våre har blitt digitalisert og det er
+        <h2 for="toggle" id="nettleverandører">Nettleverandører</h2>
+        <input type="checkbox" id="toggle-1">
+        <p class="controller-1">I dagens samfunn er man mer og mer avhengig av å være på nett. Nesten alle aspekt av livene våre har blitt digitalisert og det er
             derfor viktig å ha et slags 'eierskap' av det man gjør på nettet. Det er dessverre ikke mulig å bli 100% anonym på nett, hvis noen
             hevder at de kan gjøre deg totalt usynlig så er det salgstriks og løgn. Så hva kan man egentlig gjøre for å bli mer usynlig på nett og faktisk ha noe form for kontroll over det som går gjennom ens eget 
             hjemme-nett? <br><br>
@@ -80,10 +81,11 @@
                 Norske nettleverandører selger og analyserer</a> de ukrypterte forbindelsene på hjemmenettverket ditt. Ved å bruke en VPN så vil nettleverandøren
                 bare se IP addressen til din VPN tjeneste. Dette gjør at nett leverandøren din ikke har mulighet til å selge noe
                 av dataen din. Forbindelsen med VPN tjenesten er kryptert og pakkene som blir sendt vil se ut som helt tilfeldige tall og nummer som kan ta flere millioner år å dekryptere.
-        </p><br>
+        </p>
 
-        <h2 id="VPN-tjen">VPN tjenester</h2>
-        <p>Det er problematisk å bruke VPN tjenester fra store selskaper. For eksempel <a href="https://www.techradar.com/news/whats-the-truth-about-the-nordvpn-breach-heres-what-we-now-know" target="_blank">NordVPN ble hacket</a> og ga ikke
+        <h2 for="toggle" id="VPN-tjen">VPN tjenester</h2>
+        <input type="checkbox" id="toggle-2">
+        <p class="controller-2">Det er problematisk å bruke VPN tjenester fra store selskaper. For eksempel <a href="https://www.techradar.com/news/whats-the-truth-about-the-nordvpn-breach-heres-what-we-now-know" target="_blank">NordVPN ble hacket</a> og ga ikke
         sine kunder noe informasjon om at de ble hacket i 2 år. <a href="https://cybernews.com/news/expressvpn-cio-daniel-gericke-fined-335-000-for-cyber-espionage/" target="_blank">Express VPN har en tidligere spion</a> som sin CIO,
     og de er eid av <a href="https://www.cnet.com/tech/services-and-software/what-is-kape-technologies-what-you-need-to-know-about-the-parent-company-of-cyberghost-vpn/" target="_blank">Kape Industries</a>.
             Hvis du skal bruke en ekstern VPN må du kunne stole på dem, de mest tillitsverdige er <a href="https://mullvad.net/en/" target="_blank">Mullvad</a> og <a href="https://protonvpn.com/" target="_blank">ProtonVPN</a>.<br><br>
@@ -102,10 +104,11 @@
             VPN selskapene har kanskje tredjepartis revisjoner av deres kode. Fremdeles må vi bare stole på dem og det firmaet som gjorde 
             analyse på kodene deres. Med mindre du har tilgang til serveren og kan se din egen private nøkkel eller se at serveren ikke 
             lagrer logs så må du bare stole blindt på dem. Dette er "trust me bro" taktikken.
-        </p><br>
+        </p>
 
-        <h2 id="virtuellps">Virtuell Privat Server</h2>
-        <p> En Virtuell Privat Server (VPS) er en server man kan leie fra et cloud server hosting nettside. Store selskaper bruker ofte ordet
+        <h2 for="toggle" id="virtuellps">Virtuell Privat Server</h2>
+        <input type="checkbox" id="toggle-3">
+        <p class="controller-3"> En Virtuell Privat Server (VPS) er en server man kan leie fra et cloud server hosting nettside. Store selskaper bruker ofte ordet
             sky og cloud som en slags pen greie som er i himmelen, i virkeligheten er det bare en server i et stort serverlandskap som driver med
             skilleveggslagring eller tilbyr å åpne en port slik at du kan etablere en forbindelse.
 
