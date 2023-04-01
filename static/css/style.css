@@ -109,8 +109,7 @@ header img {
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-radius: 6px;
     border-bottom: 3px solid transparent;
     transition: 0.5s;
 }
@@ -126,8 +125,7 @@ header img {
     padding-bottom: 10px;
     margin-left: 3%;
     float: left;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+border-radius: 6px;
     border: 3px solid transparent;
     transition: 0.5s;
 }
@@ -188,7 +186,7 @@ header img {
     position: relative;
     top: -44px;
     background: #f5e0dc;
-    height: 5000px;
+    height: 3700px;
     overflow: hidden;
 }
 
@@ -281,6 +279,7 @@ header img {
     border-top-right-radius: 6px;
     border-bottom: 3px solid transparent;
     transition: 0.5s;
+    z-index: 998;
 }
 
 .innledning h1:hover {
@@ -290,37 +289,40 @@ header img {
 
 .innledning h2 {
     position: relative;
-    top: -10px;
-    cursor: default;
-    padding: 30px;
-    width: 30%;
+    top: -34px;
+    padding: 20px;
     border-radius: 6px;
     background: #1e1e2e;
-    left: -0px;
-    color: #f38ba8;
+    cursor: default;
+    color: #f5e0dc;
     transition: 0.5s;
-    text-decoration: underline;
     scroll-margin-block-start: 100px
 }
 
 .innledning p {
     position: relative;
-    top: -132px;
-    padding: 30px;
-    background: #1e1e2e;
+    top: -57px;
+    font-size: 1.2em;
     border-radius: 13px;
     border-top-left-radius: 0px;
-    color: #f5e0dc;
-    line-height: 1.8em;
+    border-top-right-radius: 0px;
+    padding: 20px;
+    border: 1px solid rgba(1,1,1,.1);
+    color: #1e1e2e;
+    line-height: 2em;
     font-weight: bold;
-    margin-bottom: -90px;
 }
 
 .innledning p a {
     color: #f38ba8;
+    transition: 0.5s;
 }
 
-.controller-1 {
+.innledning p a:hover {
+    color: #89b4fa;
+}
+
+/*.controller-1 {
     display: none;
     transition: 0.5s;
 }
@@ -354,15 +356,40 @@ header img {
 #toggle-3:checked ~ .controller-3 {
     display: block;
 }
+*/
 /* OPERATIV SYSTEM 
 ****************************************/
 
 .frame-3 {
     position: relative;
-    top: -44px;
-    background: #f5e0dc;
+    top: -46px;
+    background: #1e1e2e;
     height: 2600px;
     overflow: hidden;
+}
+
+.framer-3 {
+    position: relative;
+    top: 100px;
+    margin-left: 10%;
+}
+
+.framer-3 h1 {
+    color : #cdd6f4;
+    padding: 20px;
+    background: #181824;
+    width: 65%;
+    border-radius: 6px;
+    scroll-margin-block-start: 100px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+    cursor: default;
+}
+
+.framer-3 h1:hover {
+    background: transparent;
+    color: #c3a2f1;
+    border: 3px solid #f38ba8;
 }
 
 .frame-3 .os {
