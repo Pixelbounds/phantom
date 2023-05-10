@@ -19,17 +19,17 @@ header {
     width: 100%;
     margin-top: -15px;
     text-align: left;
-    background: #181824;
+    background: #3B4252;
     min-height: 20px;
     height: 60px;
-    border-bottom: 2px solid #c3a2f1;
+    border-bottom: 2px solid #bf616a;
     transition: 0.5s;
     z-index: 999;
 }
 
 header:hover {
-    background: #1e1e2e;
-    border-bottom: 2px solid #f38ba8;
+    background: #2E3440;
+    border-bottom: 2px solid #d08770;
 }
 
 header ul {
@@ -51,7 +51,7 @@ header ul li:first-child {
     top: -2px;
     font-family: helvetica, arial, sans-serif;
     font-size: 1.3em;
-    margin-right: 125px;
+    margin-right: 50px;
 }
 
 header ul li a:link {
@@ -85,7 +85,7 @@ header img {
 .frame {
     width: 100%;
     height: 60em;
-    background: /*url(../images/leaves.jpg)*/ #1e1e2e no-repeat center center;
+    background: /*url(../images/leaves.jpg)*/ #2E3440 no-repeat center center;
     scroll-snap-type: y mandatory;
 }
 
@@ -117,7 +117,7 @@ header img {
 .about {
     position: relative;
     top: 10em;
-    background: rgba(24, 24, 36, .95);
+    background: #4c566a;
     width: 40%;
     padding-top: 20px;
     padding-left: 40px;
@@ -154,12 +154,12 @@ border-radius: 6px;
 }
 
 .about:hover {
-    border: 3px solid #f38ba8;
-    background: rgba(30, 30, 46, 1);
+    border: 3px solid #bf616a;
+    background: #2E3440;
 }
 
 .about:hover > h1 {
-    color: #c3a2f1;
+    color: #d08770;
 }
 
 /* IMAGES IN FRAME 1 
@@ -203,7 +203,7 @@ border-radius: 6px;
 
 .frame-2 .intro h1 {
     font-size: 2.2em;
-    color: #1e1e2e
+    color: #2E3440
 }
 
 .frame-2 .intro p {
@@ -224,7 +224,7 @@ border-radius: 6px;
     font-weight: bold;
     width: 30%;
     padding: 40px;
-    background: #1e1e2e;
+    background: #2E3440;
     transition: 0.5s;
 }
 
@@ -247,7 +247,7 @@ border-radius: 6px;
 }
 
 .frame-2 .intro ol:hover > h2 {
-    color: #c3a2f1;
+    color: #d08770;
 }
 
 .frame-2 .intro ol li a:hover {
@@ -274,7 +274,7 @@ border-radius: 6px;
     color: #f5e0dc;
     padding: 20px;
     cursor: default;
-    background: #1e1e2e;
+    background: #2E3440;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom: 3px solid transparent;
@@ -283,8 +283,8 @@ border-radius: 6px;
 }
 
 .innledning h1:hover {
-    color: #c3a2f1;
-    border-bottom: 3px solid #f38ba8
+    color: #d08770;
+    border-bottom: 3px solid #bf616a
 }
 
 .innledning h2 {
@@ -292,7 +292,7 @@ border-radius: 6px;
     top: -34px;
     padding: 20px;
     border-radius: 6px;
-    background: #1e1e2e;
+    background: #2E3440;
     cursor: default;
     color: #f5e0dc;
     transition: 0.5s;
@@ -308,13 +308,13 @@ border-radius: 6px;
     border-top-right-radius: 0px;
     padding: 20px;
     border: 1px solid rgba(1,1,1,.1);
-    color: #1e1e2e;
+    color: #2E3440;
     line-height: 2em;
     font-weight: bold;
 }
 
 .innledning p a {
-    color: #f38ba8;
+    color: #bf616a;
     transition: 0.5s;
 }
 
@@ -363,7 +363,7 @@ border-radius: 6px;
 .frame-3 {
     position: relative;
     top: -46px;
-    background: #1e1e2e;
+    background: #2E3440;
     height: 2600px;
     overflow: hidden;
 }
@@ -377,7 +377,7 @@ border-radius: 6px;
 .framer-3 h1 {
     color : #cdd6f4;
     padding: 20px;
-    background: #181824;
+    background: #3B4252;
     width: 65%;
     border-radius: 6px;
     scroll-margin-block-start: 100px;
@@ -388,8 +388,8 @@ border-radius: 6px;
 
 .framer-3 h1:hover {
     background: transparent;
-    color: #c3a2f1;
-    border: 3px solid #f38ba8;
+    color: #d08770;
+    border: 3px solid #bf616a;
 }
 
 .frame-3 .os {
@@ -423,7 +423,7 @@ border-radius: 6px;
     border-radius: 6px;
     width: 35%;
     background: #89b4fa;
-    color: #1e1e2e;
+    color: #2E3440;
     font-weight: bold;
     line-height: 1.2em;
     transition: 0.5s;
@@ -482,7 +482,7 @@ border-radius: 6px;
     border-radius: 6px;
     width: 35%;
     background: #89b4fa;
-    color: #1e1e2e;
+    color: #2E3440;
     font-weight: bold;
     line-height: 1.2em;
     float: right;
@@ -490,20 +490,20 @@ border-radius: 6px;
 }
 
 .os .linux-differences:hover {
-    background: #f38ba8;
+    background: #bf616a;
 }
 
 .os .windows-differences:hover {
-    background: #f38ba8;
+    background: #bf616a;
 }
 
 .os .windows-differences:hover > ul li {
-    background: #1e1e2e;
+    background: #2E3440;
     color: #f5e0dc;
 }
 
 .os .linux-differences:hover > ul li {
-    background: #1e1e2e;
+    background: #2E3440;
     color: #f5e0dc;
 }
 
@@ -512,7 +512,7 @@ border-radius: 6px;
 }
 
 .os:hover > h1 {
-    color: #c3a2f1;
+    color: #d08770;
 }
 
 
